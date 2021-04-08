@@ -1,0 +1,84 @@
+html {
+  background-color: white;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  margin: 60px 0;
+}
+
+article img {
+  max-width: 440px;
+  max-height: 293px;
+  margin: auto;
+  display: block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  margin: 40px;
+}
+
+hr {
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 40px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+input {
+  margin: 6px;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+  border-radius: 6px;
+  border: rgba(0, 0, 0, 0.5) solid 2px
+}
+
+input[type="text"]{
+  padding-left: 10px;
+  width: 300px;
+}
+
+input::placeholder {
+  opacity: 0.5;
+}
