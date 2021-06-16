@@ -10,7 +10,8 @@ ul {
 }
 
 article {
-  margin: 60px 0;
+  margin: 60px auto;
+  max-width: 600px;
 }
 
 article img {

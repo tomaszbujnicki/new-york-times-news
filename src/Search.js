@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
-const getCall = (value) =>
-  `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${value}&sort=newest&api-key=mZMSXI9udyHWr7GXT8IyjNlD5JvWeeDK`;
-
-export const Search = () => {
+export const Search = (props) => {
   const [value, setValue] = useState('');
 
   const handleChange = (event) => {
@@ -12,7 +9,7 @@ export const Search = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(getCall(value));
+    props.onSubmit(value);
   };
 
   return (
